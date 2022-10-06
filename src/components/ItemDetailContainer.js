@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { seasons } from "./Seasons";
+import { products } from "./Products";
 import { useState , useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 
@@ -33,7 +33,7 @@ const ItemDetailContainer = () => {
     const getItemDetails = () => {
       return new Promise ( ( resolve ) => {
         setTimeout(() => {
-          resolve ( seasons.find (p => p.id == itemId) )
+          resolve ( products.find (p => p.id == itemId) )
         }, 3000 );
       } ) 
     }

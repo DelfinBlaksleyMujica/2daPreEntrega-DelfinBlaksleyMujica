@@ -1,5 +1,5 @@
 import React, { useEffect , useState } from "react"
-import { seasons } from "./Seasons";
+import { products } from "./Products";
 import Item from "./Item";
 import { useParams } from "react-router-dom";
 
@@ -35,7 +35,7 @@ const ItemList = () => {
     const getProducts = () => {
         return new Promise ( resolve => {
             setTimeout( () => { 
-                resolve ( seasons.find( p=> p.id == itemId) );
+                resolve ( products.find( p=> p.id == itemId) );
             } , 2000 )
         })
     }

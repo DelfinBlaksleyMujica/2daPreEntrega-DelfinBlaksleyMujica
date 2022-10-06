@@ -1,7 +1,7 @@
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import { useEffect , useState } from "react";
-import { seasons } from "./Seasons";
+import { products } from "./Products";
 import DeployableMenu from './DeployableMenu';
 
 
@@ -19,7 +19,7 @@ const NavBar = ({ nombreDeEmpresa, }) => {
 
     const getCategory = () => {
         return new Promise( resolve => {
-            resolve ( seasons );
+            resolve ( products );
         })
     }
     
